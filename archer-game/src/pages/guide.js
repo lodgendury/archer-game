@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useWallet, WalletStatus } from "@terra-money/wallet-provider";
 import '../App.css';
+import WalletAddress from '../components/WalletAddress';
 
 
 const Guide = () => {
@@ -64,7 +65,10 @@ const Guide = () => {
             Kill as many bad guys as you can within 15 seconds!
           </span>
         </div>
+        <div className="guide-home-container">
+        <WalletAddress  />
         <Link to="/" className="menu-button">HOME</Link>
+        </div>
       </div>
       </div>
       {renderConnectButton()}
