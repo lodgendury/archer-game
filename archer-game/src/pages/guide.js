@@ -60,7 +60,7 @@ const Guide = () => {
       <div className="board-container">
         <h3>How to play</h3>
         
-        <div>
+        <div className="help-container">
           <span className="help">
             Kill as many bad guys as you can within 15 seconds!
           </span>
