@@ -7,9 +7,17 @@
       }
     },
     "clicker": {
-      "codeId": "6",
+      "codeId": "10",
       "contractAddresses": {
-        "default": "terra19zpyd046u4swqpksr3n44cej4j8pg6ah2y6dcg"
+        "default": "terra1a48uhq7wah6uerlcz0uwv2k0l37pgzar2jqa3d"
+      }
+    }
+  },
+  "testnet": {
+    "clicker": {
+      "codeId": "68370",
+      "contractAddresses": {
+        "default": "terra1per39nes73r2fxxjzpq5srwcdk3j00jdvfq2dr"
       }
     }
   }
