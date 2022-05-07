@@ -101,7 +101,7 @@ const Leaderboard = () => {
         <div className="scroll">
         {/* If loading, show loading, else render */}
         {loading ? (
-          <div>Loading...</div>
+          <div className="scoreboard-loading-text">Loading...</div>
         ) : (
           renderScores(scores)
         )}
