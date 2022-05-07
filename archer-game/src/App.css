@@ -112,6 +112,7 @@ border: 1px solid rgb(231, 51, 27);
    align-content: center;
    flex-flow: row wrap;
    gap: 1rem;
+   text-align: center;
 }
 .fullscreen h3 {
    margin: 0;
