@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useConnectedWallet } from '@terra-money/wallet-provider';
 import { useWallet, WalletStatus } from "@terra-money/wallet-provider";
 import '../App.css';
+import WalletAddress from '../components/WalletAddress';
 
 const Leaderboard = () => {
   const { status, connect, disconnect, availableConnectTypes } = useWallet();
@@ -106,7 +107,10 @@ const Leaderboard = () => {
         )}
         </div>
         
+        <div className="home-container">
+        <WalletAddress  />
         <Link to="/" className="menu-button">HOME</Link>
+        </div>
       
       </div>
       </div>
