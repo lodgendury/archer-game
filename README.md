@@ -1,4 +1,4 @@
-### **Welcome to the Archer-Game👋**
+### **Welcome to the Archer-Game project👋**
 
 To get started with this project, clone this repo and follow these commands:
 
