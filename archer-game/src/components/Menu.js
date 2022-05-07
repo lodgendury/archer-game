@@ -21,7 +21,7 @@ const Menu = () => {
     });
   };
 
-  return <div className="game-menu">{renderMenu()}</div>;
+  return <div className="menu">{renderMenu()}</div>;
 };
 
 export default Menu;
