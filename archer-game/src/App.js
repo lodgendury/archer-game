@@ -1,6 +1,5 @@
 import './App.css';
 import { useWallet, WalletStatus } from "@terra-money/wallet-provider";
-
 import Menu from './components/Menu';
 
 
@@ -8,18 +7,31 @@ function App() {
 
    // Current wallet status, connect & disconnect functions, available connections
    const { status, connect, disconnect, availableConnectTypes } = useWallet();
+   
+     
+   //let audio = new Audio("/Mission-Impossible.mp3");
+    
+   // Don't let it get too loud!
+   //audio.volume = 0.2;
+   //audio.play();
+
+   //const stopMusic = () => audio.pause();
+
+   //window.addEventListener("click", stopMusic);
+   
 
    const renderConnectButton = () => {
     if (status === WalletStatus.WALLET_NOT_CONNECTED) {
+      
       return (
         <div className="connect-wallet-div">
           <button
             type="button"
             key={`connect-EXTENSION`}
-            onClick={() => connect("EXTENSION")}
+            onClick={() => {connect("EXTENSION")}}
             className="cta-button connect-wallet-button"
           >
-            Connect wallet
+            Connect Wallet to Play
           </button>
         </div>
       );
@@ -29,7 +41,7 @@ function App() {
         <button
           type="button"
           onClick={() => disconnect()}
-          className="cta-button connect-wallet-button"
+          className="cta-button disconnect-wallet-button"
         >
           Disconnect
         </button>
@@ -45,18 +57,18 @@ function App() {
     <main className="App">
       <header>
         <div className="header-titles">
-          <h1>Casino Royale</h1>
-          <p>🔫 Does he ever miss? No, He is 47 🔫</p>
+        <div class="estrellas inverso">
+  <span>R</span>
+  <span>E</span>
+  <span>H</span>
+  <span>C</span>
+  <span>R</span>
+  <span>A</span>
+</div>
+          
         </div>
 
       </header>
-
-      {status === WalletStatus.WALLET_NOT_CONNECTED && (<div>
-        <img
-          src="https://64.media.tumblr.com/a5b09b68402c3049ce834a596b72465b/3982384500cbe217-02/s540x810/28b5a72d5cab89cd5b87ee8a2bbbc6e177e726b9.gifv"
-          alt="Goblin gif"
-        />
-      </div>)}
 
        {/* Show the menu after connection */}
        {status === WalletStatus.WALLET_CONNECTED && (
