@@ -14,6 +14,6 @@ module.exports = {
   },
   bombay: {
     // Instead of the actual seed phrase we can use this :D
-    mnemonic: process.env.SEED_PHRASE,
+    mnemonic: SEED_PHRASE,
   },
 };
