@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import WalletAddress from './WalletAddress';
 
 const menu_options = [
   { name: 'Play', link: '/play' },
@@ -21,7 +22,11 @@ const Menu = () => {
     });
   };
 
-  return <div className="menu">{renderMenu()}</div>;
+  return <div className="menu">
+    
+      {renderMenu()}
+      <WalletAddress />
+  </div>;
 };
 
 export default Menu;
