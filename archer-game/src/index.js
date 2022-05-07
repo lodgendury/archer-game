@@ -1,5 +1,6 @@
 import App from './App';
-import React from 'react';
+import Fullscreen from './Fullscreen';
+import React from "react";
 import ReactDOM from 'react-dom';
 
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
@@ -17,6 +18,7 @@ const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 getChainOptions().then((chainOptions) => {
   console.log("Chain Options are ", chainOptions);
+  
 ReactDOM.render(
   <React.StrictMode>
     <WalletProvider {...chainOptions}>
@@ -31,13 +33,14 @@ ReactDOM.render(
               <Route path="/guide" element={<Guide />} />
             </Routes>
           </BrowserRouter>
-
+         
+         <Fullscreen />
         <div className="footer-container">
-          <img
+         { /*<img
             alt="Twitter Logo"
             className="twitter-logo"
             src="/twitter-logo.svg"
-          />
+/>*/}
           <a
             className="footer-text"
             href={TWITTER_LINK}
